@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrintClean — Privacy Policy</title>
+<meta name="description" content="PrintClean privacy policy: pages are read and typeset in your browser, nothing is uploaded, and the only network request is the optional Pro licence check.">
+<link rel="icon" href="icons/icon128.png">
+<style>
+:root{
+  --accent:#1f4e79;
+  --accent-2:#12314f;
+  --bg:#f7f9fc;
+  --surface:#ffffff;
+  --ink:#131c26;
+  --body:#4b5765;
+  --muted:#7c8794;
+  --line:#e3e9f1;
+  --tint:#eef3f9;
+  --tint:color-mix(in srgb, var(--accent) 8%, #ffffff);
+  --tint-strong:#dfe9f4;
+  --tint-strong:color-mix(in srgb, var(--accent) 14%, #ffffff);
+  --shadow:0 18px 45px rgba(19,28,38,.10);
+  --shadow-soft:0 8px 24px rgba(19,28,38,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{
+  margin:0;
+  color:var(--body);
+  background:radial-gradient(900px 420px at 100% -8%, color-mix(in srgb, var(--accent-2) 12%, #ffffff) 0%, rgba(255,255,255,0) 70%), var(--bg);
+  font-family:"Segoe UI Variable Text","Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{display:block;max-width:100%}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+button,select{font:inherit}
+[hidden]{display:none !important}
+::selection{background:color-mix(in srgb, var(--accent) 22%, #ffffff);color:var(--ink)}
+:focus-visible{outline:2px solid color-mix(in srgb, var(--accent) 55%, #ffffff);outline-offset:3px}
+.wrap{width:min(1120px, calc(100% - 40px));margin:0 auto}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.topbar-inner{display:flex;align-items:center;gap:18px;height:70px}
+.brand{display:flex;align-items:center;gap:11px;color:var(--ink);font-size:16px;font-weight:750;letter-spacing:-.015em;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand img{width:32px;height:32px;border-radius:9px;background:#fff;border:1px solid var(--line)}
+.top-actions{display:flex;align-items:center;gap:9px;margin-left:auto}
+.icon-btn{width:38px;height:38px;display:grid;place-items:center;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--muted)}
+.icon-btn:hover{color:var(--accent);border-color:color-mix(in srgb, var(--accent) 26%, var(--line));text-decoration:none}
+.lang{
+  appearance:none;-webkit-appearance:none;
+  border:1px solid var(--line);
+  background-color:#fff;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238d878c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 10px center;
+  background-size:12px;
+  color:var(--ink);
+  border-radius:10px;
+  padding:9px 32px 9px 11px;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+  max-width:150px;
+}
+.lang:hover{border-color:color-mix(in srgb, var(--accent) 26%, var(--line))}
+.site-footer{margin-top:48px;border-top:1px solid var(--line);background:rgba(255,255,255,.8);padding:32px 0}
+.footer-inner{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between}
+.footer-brand{display:flex;align-items:center;gap:11px;color:var(--ink);font-size:14px;font-weight:700}
+.footer-brand img{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.footer-brand .copy{display:block;color:var(--muted);font-size:12px;font-weight:500;line-height:1.4;margin-top:1px}
+.footer-links{display:flex;flex-wrap:wrap;gap:9px 18px;align-items:center;font-size:13px;font-weight:600}
+.footer-links a{color:var(--muted)}
+.footer-links a:hover{color:var(--accent);text-decoration:none}
+@media (max-width:900px){
+  .topbar-inner{height:62px}
+  .wrap{width:calc(100% - 32px)}
+}
+@media (max-width:560px){
+  .brand span{display:none}
+  .lang{max-width:124px}
+  .site-footer{padding:26px 0}
+  .footer-inner{align-items:flex-start;flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+}
+
+.policy-hero{padding:42px 0 8px}
+.policy-hero-card{position:relative;overflow:hidden;background:linear-gradient(135deg,#ffffff 0%, color-mix(in srgb, var(--accent) 7%, #ffffff) 58%, color-mix(in srgb, var(--accent-2) 16%, #ffffff) 100%);border:1px solid var(--line);border-radius:26px;padding:42px 46px 36px;box-shadow:var(--shadow)}
+.policy-hero-card::after{content:"";position:absolute;width:360px;height:360px;right:-110px;top:-160px;border-radius:50%;border:1px solid color-mix(in srgb, var(--accent) 22%, #ffffff);box-shadow:0 0 0 48px color-mix(in srgb, var(--accent) 5%, transparent);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid color-mix(in srgb, var(--accent) 22%, var(--line));color:var(--accent);font-size:11.5px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.policy-hero h1{position:relative;z-index:1;margin:16px 0 0;color:var(--ink);font-size:clamp(34px,4.4vw,50px);line-height:1.06;letter-spacing:-.035em;font-weight:800}
+.policy-hero h1 .h1-sub{color:var(--accent);font-weight:780}
+.summary{position:relative;z-index:1;max-width:860px;margin:16px 0 20px;color:var(--body);font-size:15.5px;line-height:1.75}
+.summary strong{color:var(--ink);font-weight:700}
+.chips{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.8);color:var(--ink);font-size:12.5px;font-weight:650}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-2)}
+.updated{position:relative;z-index:1;display:flex;align-items:center;gap:7px;margin:18px 0 0;color:var(--muted);font-size:12.5px;font-weight:550}
+.updated svg{color:var(--accent)}
+.policy-layout{display:grid;grid-template-columns:272px minmax(0,1fr);gap:28px;align-items:start;padding:32px 0 38px}
+.toc{position:sticky;top:92px;max-height:calc(100vh - 120px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 17px;box-shadow:var(--shadow-soft)}
+.toc-title{margin:2px 0 12px;color:var(--ink);font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+#p-toc{display:grid;gap:3px}
+#p-toc a{display:grid;grid-template-columns:26px minmax(0,1fr);gap:8px;align-items:baseline;padding:8px 10px;border-radius:10px;border:1px solid transparent;color:var(--muted);font-size:14px;line-height:1.45}
+#p-toc a span{color:color-mix(in srgb, var(--accent) 58%, var(--muted));font-size:11.5px;font-weight:800;letter-spacing:.04em}
+#p-toc a:hover{background:var(--tint);color:var(--ink);text-decoration:none}
+#p-toc a.active{background:var(--tint);border-color:color-mix(in srgb, var(--accent) 18%, var(--line));color:var(--ink)}
+#p-toc a.active span{color:var(--accent)}
+.policy-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 32px;box-shadow:var(--shadow-soft)}
+.policy-card + .policy-card{margin-top:15px}
+.policy-card h2{display:flex;align-items:baseline;gap:11px;margin:0 0 16px;color:var(--ink);font-size:21px;line-height:1.3;letter-spacing:-.015em;font-weight:760}
+.policy-num{flex:none;padding:4px 8px;border-radius:8px;background:var(--tint);color:var(--accent);font-size:11.5px;font-weight:800;letter-spacing:.04em}
+.policy-body{color:var(--body);font-size:15px;line-height:1.75;overflow-wrap:anywhere}
+.policy-body p{margin:0 0 14px}
+.policy-body p:last-child{margin-bottom:0}
+.policy-body strong{color:var(--ink);font-weight:700}
+.policy-body em{color:var(--body)}
+.policy-body a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.policy-body a:hover{color:color-mix(in srgb, var(--accent) 80%, var(--ink))}
+.policy-body code{display:inline;padding:1px 6px;border:1px solid var(--line);border-radius:6px;background:#f2f5fa;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em}
+.policy-body ul{display:grid;gap:8px;margin:0 0 15px;padding:0;list-style:none}
+.policy-body ul:last-child{margin-bottom:0}
+.policy-body li{position:relative;padding-left:21px}
+.policy-body li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--accent-2)}
+.policy-body h3{margin:21px 0 8px;color:var(--ink);font-size:15.5px;line-height:1.4;font-weight:750}
+.policy-body h3:first-child{margin-top:0}
+.policy-body .note{margin:15px 0 0;padding:13px 15px;border-left:3px solid var(--accent);border-radius:10px;background:var(--tint);color:var(--body);font-size:13.5px;line-height:1.65}
+.table-wrap{margin:15px 0;overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.policy-body table{width:100%;min-width:480px;border-collapse:collapse;font-size:13.5px;line-height:1.55}
+.policy-body th{padding:10px 13px;border-bottom:1px solid var(--line);background:#f2f5fa;color:var(--ink);text-align:left;font-weight:700}
+.policy-body td{padding:10px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+.policy-body th:first-child,.policy-body td:first-child{min-width:150px}
+.policy-body tr:last-child td{border-bottom:none}
+.policy-body table code{white-space:nowrap}
+@media (max-width:900px){
+  .policy-hero{padding:26px 0 4px}
+  .policy-hero-card{padding:30px 24px 28px;border-radius:22px}
+  .policy-layout{grid-template-columns:1fr;gap:16px;padding:22px 0 30px}
+  .toc{position:static;max-height:none;padding:14px}
+  #p-toc{grid-template-columns:1fr 1fr}
+  .policy-card{padding:23px 20px}
+  .policy-card h2{font-size:19px}
+}
+@media (max-width:600px){
+  #p-toc{grid-template-columns:1fr}
+  .policy-card{padding:21px 17px}
+  .policy-body{font-size:14.5px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><img src="icons/icon128.png" alt="" width="32" height="32"><span>PrintClean</span></a>
+    <div class="top-actions">
+      <select class="lang" id="p-lang" aria-label="Language"><option value="en">English</option><option value="zh">简体中文</option><option value="ja">日本語</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option></select>
+      <a class="icon-btn" href="index.html" aria-label="Home" title="Home"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v10h12V10"/></svg></a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="policy-hero">
+    <div class="wrap">
+      <div class="policy-hero-card">
+        <span class="eyebrow" id="p-eyebrow">Privacy Policy</span>
+        <h1><span id="p-h1">PrintClean</span> <span class="h1-sub" id="p-h1-sub">Privacy Policy</span></h1>
+      <p class="summary" id="p-summary">PrintClean does NOT collect, store or transmit the pages you read, the text it extracts, or any personal information. Extraction and typesetting happen inside your browser tab; the cleaned article waits in the extension's memory and is deleted as soon as the sheet reads it. The only network request the extension makes is the optional Pro licence check in Section 4.</p>
+      <div class="chips" id="p-chips"><span class="chip">Pages stay in the tab</span><span class="chip">No upload</span><span class="chip">No account</span><span class="chip">Licence optional</span></div>
+        <p class="updated"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="p-updated">Last updated: November 2026</span></p>
+      </div>
+    </div>
+  </section>
+  <div class="wrap policy-layout">
+    <aside class="toc">
+      <p class="toc-title" id="p-toc-title">On this page</p>
+      <nav id="p-toc" aria-label="On this page">
+<a href="#section-1"><span>01</span>Data Collection</a><a href="#section-2"><span>02</span>How PrintClean Works</a><a href="#section-3"><span>03</span>Permissions Explained</a><a href="#section-4"><span>04</span>Third-Party Services & Licence Verification</a><a href="#section-5"><span>05</span>Data Sharing</a><a href="#section-6"><span>06</span>Data Retention & Deletion</a><a href="#section-7"><span>07</span>Children's Privacy</a><a href="#section-8"><span>08</span>Changes to This Policy</a><a href="#section-9"><span>09</span>Contact</a>
+      </nav>
+    </aside>
+    <div id="p-sections">
+<article class="policy-card" id="section-1"><h2><span class="policy-num">01</span>Data Collection</h2><div class="policy-body"><p>PrintClean does not collect personal information, browsing history, page content or usage analytics. There are no cookies, no tracking pixels, no fingerprinting and no telemetry of any kind. The links you clean are processed in the popup and, if you keep a history, stored only in this browser's local extension storage.</p></div></article><article class="policy-card" id="section-2"><h2><span class="policy-num">02</span>How PrintClean Works</h2><div class="policy-body"><p>Everything happens inside your browser:</p><ul><li>Input — you paste a URL, press Paste to read the clipboard, or pull the URL of the tab you are on.</li><li>Cleaning — the URL is parsed with the browser's own URL API, tracking parameters are matched against 58 built-in names and 11 prefix families plus any rules you added, and the result is rebuilt.</li><li>Redirects — a wrapper link (l.facebook.com, google.com/url, out.reddit.com and 15 other shapes) is unpacked by reading the target out of the URL itself. The redirect is never requested, so the destination site does not learn that you looked at it.</li><li>Output — the clean URL, a Markdown link, a text or CSV export, or an entry in your local history.</li></ul><div class="note">No link, URL or page content is ever sent to a server, including ours.</div></div></article><article class="policy-card" id="section-3"><h2><span class="policy-num">03</span>Permissions Explained</h2><div class="policy-body"><div class="table-wrap"><table><thead><tr><th>PERM_HEAD</th><th>PURPOSE_HEAD</th></tr></thead><tbody><tr><td><code>storage</code></td><td>Settings, custom rules, history and licence state on this device</td></tr><tr><td><code>activeTab</code></td><td>Read the URL of the page you are on, and only after you click the icon</td></tr><tr><td><code>clipboardWrite</code></td><td>Copy the clean link when you press a copy button or enable auto-copy</td></tr><tr><td><code>clipboardRead</code></td><td>Read the clipboard when you press Paste, and never in the background</td></tr><tr><td><code>https://api.annmax1983.com/*</code></td><td>Licence activation and checks only — never a link</td></tr></tbody></table></div><div class="note">There is no content script, no &lt;all_urls&gt; host access, no tabs permission and no downloads permission. PrintClean cannot see the text of any page.</div></div></article><article class="policy-card" id="section-4"><h2><span class="policy-num">04</span>Third-Party Services & Licence Verification</h2><div class="policy-body"><p>Free features make no network request at all. With a Pro licence, the extension contacts our licence server (api.annmax1983.com) only to activate the key, to re-verify it at most once every two hours when you open the popup, and to release it. Those requests carry the licence key, a random installation identifier, the plugin id and basic browser metadata (browser name and version, interface language, time zone, user agent) — never a link, a page address or your history. Our licence server records the IP address of these requests solely for rate limiting and abuse prevention, never for profiling, advertising or sharing.</p><p>If the check fails, nothing is locked: the cached licence keeps working offline.</p></div></article><article class="policy-card" id="section-5"><h2><span class="policy-num">05</span>Data Sharing</h2><div class="policy-body"><p>We do not share, sell, rent or trade any data with third parties, because we do not collect any.</p></div></article><article class="policy-card" id="section-6"><h2><span class="policy-num">06</span>Data Retention & Deletion</h2><div class="policy-body"><p>History, settings, custom rules and counters live in this browser's local extension storage. Clear the history from the popup, or remove the extension, and the data is gone with it — there is no copy anywhere else. Export a rules bundle or the history JSON first if you want to keep something.</p></div></article><article class="policy-card" id="section-7"><h2><span class="policy-num">07</span>Children's Privacy</h2><div class="policy-body"><p>PrintClean does not collect personal information from any user, including children under the age of 13.</p></div></article><article class="policy-card" id="section-8"><h2><span class="policy-num">08</span>Changes to This Policy</h2><div class="policy-body"><p>If this policy changes, the revised version is published on this page with a new date. Material changes are noted in the extension's release notes.</p></div></article><article class="policy-card" id="section-9"><h2><span class="policy-num">09</span>Contact</h2><div class="policy-body"><p>Questions about this policy? Email <a href="mailto:support@annmax1983.com">support@annmax1983.com</a>.</p></div></article>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="icons/icon128.png" alt="" width="30" height="30">
+      <div>PrintClean<span class="copy">© 2026 PrintClean</span></div>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="index.html" id="p-footer-home">Home</a>
+      <a href="privacy-policy.html" id="p-footer-privacy">Privacy Policy</a>
+      <a href="https://annmax1983.com/extensions/printclean" target="_blank" rel="noopener" id="p-footer-site">Website</a>
+      <a href="mailto:support@annmax1983.com" id="p-footer-email">Email</a>
+    </nav>
+  </div>
+</footer>
+<script>
+const MODEL = {"langs":{"en":{"summary":"PrintClean does NOT collect, store or transmit the pages you read, the text it extracts, or any personal information. Extraction and typesetting happen inside your browser tab; the cleaned article waits in the extension's memory and is deleted as soon as the sheet reads it. The only network request the extension makes is the optional Pro licence check in Section 4.","sections":[{"t":"Data Collection","html":"<p>PrintClean collects nothing. There is no account, no analytics, no telemetry, no crash reporting, no advertising identifier and no tracking pixel.</p><p>Specifically, the extension does not send anywhere:</p><ul><li>the address of any page you clean or print;</li><li>the text, images or markup it extracts;</li><li>the selectors or site rules you type;</li><li>the contents of a batch list.</li></ul><p>The pages you clean are read in the tab where they already are, from the copy your browser has loaded. PrintClean never fetches a page on your behalf in single-page mode.</p>"},{"t":"How PrintClean Reads a Page","html":"<p>When you press <strong>Clean &amp; print</strong>, PrintClean runs a script in the current tab through the browser's own scripting API. That script scores the blocks of the page, keeps the article, and builds a cleaned copy: navigation, sidebars, ad slots, cookie banners, share bars, comment threads, newsletter boxes, scripts and inline event handlers are dropped, and image addresses are made absolute.</p><p>The cleaned copy is placed in <code>chrome.storage.session</code> — memory owned by the browser, cleared when the browser closes — and a new tab opens to read it. That tab deletes the copy the moment it has rendered, so a second reader cannot pick it up.</p><p>Batch mode works differently and is the only feature that uses the network: with your permission it loads each address you listed, extracts the article in the reader tab, and discards the rest of the response. Those requests go directly from your browser to the site you named. No intermediate server is involved, and no copy of the response is kept.</p>"},{"t":"Permissions Explained","html":"<p>PrintClean asks for the minimum it can work with, and explains each item:</p><ul><li><strong>storage</strong> — remembers your type settings, paper and margin choice, and the selectors you saved per site. Local to this browser.</li><li><strong>activeTab</strong> — grants access to the page in front of you for one action, when you click the toolbar button. It is not a standing permission to read every site.</li><li><strong>scripting</strong> — runs the extraction script in that tab.</li><li><strong>Host access, requested on demand</strong> — batch mode needs to load the addresses you paste, so the first time you start a batch the browser asks whether PrintClean may access pages on the web. Nothing is read before you accept, and the grant can be withdrawn at any time in the browser's extension settings.</li></ul><p>PrintClean ships no content script, no background page injection and no <code>&lt;all_urls&gt;</code> permission. It has no access to downloads, the debugger, your tabs' history, your bookmarks or your clipboard.</p>"},{"t":"Third-Party Services & Licence Verification","html":"<p>PrintClean is free. An optional Pro licence unlocks larger batches and custom selectors.</p><p>If — and only if — you activate a licence, the extension contacts <code>api.annmax1983.com</code> to check the key. That request contains the licence key, a random installation identifier generated in this browser and basic browser metadata. It is sent when you activate, and afterwards at most once every two hours when you open the popup.</p><p>The check is deliberately forgiving: if the server is unreachable, the cached licence keeps working, so a network failure never locks a paid feature. The request is also the only one PrintClean ever makes to a server of ours — no page address, no article text and no selector is included in it.</p><p>Payment itself is handled by the payment provider on its own checkout page; PrintClean never sees your card details.</p>"},{"t":"Data Sharing","html":"<p>Nothing is shared, because nothing is collected. PrintClean has no servers holding user data, no advertising partners, no data brokers and no analytics vendor. There is nothing to sell, and no mechanism to sell it with.</p>"},{"t":"Data Retention & Deletion","html":"<p>Three kinds of data exist, all of them on your machine:</p><ul><li><strong>Settings and site rules</strong> live in this browser's extension storage until you change them, reset them, or remove the extension. <em>Reset settings</em> in the popup clears them.</li><li><strong>The cleaned article</strong> lives in session memory and is deleted by the reader tab as soon as it renders, or by the browser when it closes.</li><li><strong>The licence</strong>, if you activated one, is cached in this browser so the extension works offline. Removing the licence in the popup deletes it locally and frees the activation slot.</li></ul><p>There is no history of the pages you cleaned, and no usage counter that leaves the browser. Removing the extension removes everything it stored.</p>"},{"t":"Children's Privacy","html":"<p>PrintClean is a general-purpose tool for printing web pages. It is not directed at children, it has no accounts, and it collects no information from anyone, of any age.</p>"},{"t":"Changes to This Policy","html":"<p>If a future version of PrintClean needs a new permission or a new network request, this page will be updated before that version ships, and the date at the top will change. The current design goal is that this policy stays short: the extension reads a page, typesets it locally, and prints it.</p>"},{"t":"Contact","html":"<p>Questions about this policy, or about what the extension does with a page, can go to <a href=\"mailto:support@annmax1983.com\">support@annmax1983.com</a>. Bug reports and feature requests are welcome at the same address.</p>"}]},"zh":{"summary":"PrintClean 不收集、不存储、不传输你阅读的页面、提取出的正文或任何个人信息。提取和排版都发生在你的浏览器标签页里；干净正文只等在扩展的内存中，标签页读完即删。本扩展唯一的网络请求是第 4 节说明的可选 Pro 授权核验。","sections":[{"t":"数据收集","html":"<p>PrintClean 什么都不收集。没有账号、没有统计、没有遥测、没有崩溃上报、没有广告标识、没有追踪像素。</p><p>具体地说，扩展不会把以下任何内容发到任何地方：</p><ul><li>你净化或打印的页面地址；</li><li>它提取出来的文字、图片或结构；</li><li>你填写的选择器与站点规则；</li><li>批量列表里的内容。</li></ul><p>单页模式下，页面就在它原本所在的标签页里被读取，用的是浏览器已经加载好的那一份。PrintClean 不会替你去抓取页面。</p>"},{"t":"PrintClean 如何读取页面","html":"<p>当你点击 <strong>净化并打印</strong> 时，PrintClean 通过浏览器自带的脚本接口在当前标签页里运行一段脚本。这段脚本给页面的各个区块打分，留下正文，拼出一份干净副本：导航、侧栏、广告位、Cookie 横幅、分享条、评论区、订阅框、脚本和内联事件处理都被丢弃，图片地址统一转成绝对路径。</p><p>干净副本会放进 <code>chrome.storage.session</code>——浏览器管理的内存，关闭浏览器即清空——然后打开一个新标签页来读取它。那个标签页渲染完成就把它删掉，第二个页面拿不到。</p><p>批量模式是唯一使用网络的功能，而且方式不同：在你授权之后，它会加载你列出的每个地址，在阅读页里提取正文，其余响应内容丢弃。这些请求从你的浏览器直接发往你指定的站点，没有中间服务器，也不保留响应副本。</p>"},{"t":"权限说明","html":"<p>PrintClean 只申请它能正常工作所需的最小权限，并逐项说明：</p><ul><li><strong>storage</strong>——记住你的字号、纸张与页边距选择，以及按站点保存的选择器。只存在这台浏览器里。</li><li><strong>activeTab</strong>——你点工具栏按钮的那一刻，授予对眼前这一页的一次性访问权。它不是长期读取所有网站的许可。</li><li><strong>scripting</strong>——在那个标签页里运行提取脚本。</li><li><strong>按需申请的站点访问</strong>——批量模式需要加载你粘贴的地址，所以第一次开始批量时，浏览器会问你是否允许 PrintClean 访问网页。你不点同意之前什么都不会读，这个授权也可以随时在浏览器的扩展设置里收回。</li></ul><p>PrintClean 没有常驻内容脚本、没有后台注入、没有 <code>&lt;all_urls&gt;</code> 权限。它拿不到下载、调试器、标签页历史、书签和剪贴板。</p>"},{"t":"第三方服务与授权核验","html":"<p>PrintClean 免费。可选的 Pro 授权解锁更大的批量与自定义选择器。</p><p>只有当你激活授权时，扩展才会联系 <code>api.annmax1983.com</code> 核验密钥。该请求包含授权码、在本浏览器里随机生成的安装标识和基本浏览器信息。激活时发一次，之后每天打开面板最多每两小时一次。</p><p>核验刻意宽松：服务器不可达时，缓存里的授权继续可用，网络问题绝不会锁住已付费的功能。这也是 PrintClean 唯一会请求我们服务器的场景——请求里不含任何页面地址、正文或选择器。</p><p>付款本身由支付服务商在自己的结算页完成，PrintClean 看不到你的卡信息。</p>"},{"t":"数据共享","html":"<p>没有共享，因为没有收集。PrintClean 没有存放用户数据的服务器，没有广告合作方，没有数据中间商，也没有统计服务商。没有可卖的东西，也没有可卖的渠道。</p>"},{"t":"数据保留与删除","html":"<p>存在的数据只有三类，全都在你的机器上：</p><ul><li><strong>设置与站点规则</strong>存在这台浏览器的扩展存储里，直到你修改、重置或卸载扩展。面板里的 <em>重置设置</em> 会清掉它们。</li><li><strong>干净正文</strong>存在会话内存里，阅读页渲染完成就删，浏览器关闭也会清空。</li><li><strong>授权</strong>（如果你激活过）缓存在本浏览器里以便离线使用。在面板里移除授权会删掉本地记录并释放激活名额。</li></ul><p>没有净化历史，也没有离开浏览器的使用计数。卸载扩展即删除它保存的一切。</p>"},{"t":"儿童隐私","html":"<p>PrintClean 是打印网页的通用工具。它不面向儿童，没有账号体系，也不收集任何年龄的人的任何信息。</p>"},{"t":"政策变更","html":"<p>如果未来的版本需要新权限或新的网络请求，本页会在该版本发布之前更新，顶部的日期也会跟着变。当前的设计目标是让这份政策保持简短：扩展读一页、在本机排版、打印出来。</p>"},{"t":"联系方式","html":"<p>关于本政策、或关于扩展如何处理页面，都可以写信到 <a href=\"mailto:support@annmax1983.com\">support@annmax1983.com</a>。问题反馈与功能建议也欢迎发到同一地址。</p>"}]},"ja":{"summary":"PrintClean は、閲覧したページ、抽出した本文、その他の個人情報を収集・保存・送信しません。抽出と組版はブラウザーのタブ内で行われ、整えた本文は拡張機能のメモリーに待機し、シートが読んだ瞬間に削除されます。通信は第 4 節の任意の Pro ライセンス確認だけです。","sections":[{"t":"データの収集","html":"<p>PrintClean は何も収集しません。アカウントなし、解析なし、テレメトリーなし、クラッシュ報告なし、広告識別子なし、計測ピクセルなしです。</p><p>具体的には、次のいずれもどこかへ送信しません。</p><ul><li>整えた・印刷したページのアドレス</li><li>抽出した文章、画像、マークアップ</li><li>入力したセレクターやサイト別ルール</li><li>バッチ用リストの中身</li></ul><p>単ページの場合、ページはもともとあるタブで、ブラウザーが読み込み済みの内容から読まれます。PrintClean が代わりにページを取りに行くことはありません。</p>"},{"t":"ページの読み取り方法","html":"<p><strong>整えて印刷</strong> を押すと、PrintClean はブラウザー標準のスクリプト API で現在のタブにスクリプトを実行します。スクリプトはページの区画を採点し、本文を残して整えた複製を作ります。ナビゲーション、サイドバー、広告枠、Cookie の帯、共有バー、コメント、購読案内、スクリプト、インラインのイベント属性は取り除かれ、画像のアドレスは絶対パスになります。</p><p>整えた複製は <code>chrome.storage.session</code>（ブラウザーが管理するメモリーで、終了時に消える）に置かれ、新しいタブがそれを読みます。そのタブは描画し終えた時点で複製を削除するので、別のタブが拾うことはできません。</p><p>バッチは唯一ネットワークを使う機能で、仕組みも異なります。許可を得たうえで、指定された各アドレスを読み込み、リーダータブで本文を抽出し、残りの応答は破棄します。通信はブラウザーから指定サイトへ直接行われ、中継サーバーはなく、応答の複製も残しません。</p>"},{"t":"権限の説明","html":"<p>PrintClean は動作に必要な最小限だけを要求し、それぞれを説明します。</p><ul><li><strong>storage</strong> — 文字設定、用紙と余白の選択、サイト別セレクターを記憶します。このブラウザー内だけです。</li><li><strong>activeTab</strong> — ツールバーのボタンを押した瞬間、目の前のページへの一時的なアクセスを与えます。すべてのサイトを常時読む許可ではありません。</li><li><strong>scripting</strong> — そのタブで抽出スクリプトを実行します。</li><li><strong>必要時のホストアクセス</strong> — バッチは貼り付けたアドレスを読み込むため、最初の実行時にブラウザーが「ウェブ上のページへのアクセスを許可するか」を尋ねます。同意するまで何も読みませんし、許可はブラウザーの拡張機能設定でいつでも取り消せます。</li></ul><p>常駐のコンテンツスクリプト、バックグラウンドへの注入、<code>&lt;all_urls&gt;</code> 権限はありません。ダウンロード、デバッガー、タブ履歴、ブックマーク、クリップボードにはアクセスできません。</p>"},{"t":"第三者サービスとライセンス確認","html":"<p>PrintClean は無料です。任意の Pro ライセンスで、より大きなバッチとカスタムセレクターが使えます。</p><p>ライセンスを有効化した場合に限り、拡張機能は <code>api.annmax1983.com</code> に鍵を確認します。その要求にはライセンスキー、このブラウザーで生成されたランダムなインストール識別子、基本的なブラウザー情報が含まれます。有効化時に一度、その後はポップアップを開いた際に最大 2 時間に一度です。</p><p>確認は意図的に緩くしてあります。サーバーに届かない場合も保存済みのライセンスで動き続けるので、通信の失敗が有料機能を止めることはありません。この要求が当社サーバーへの唯一の通信で、ページのアドレス、本文、セレクターは含まれません。</p><p>支払いは決済事業者のページで行われ、PrintClean がカード情報を見ることはありません。</p>"},{"t":"データの共有","html":"<p>共有はありません。収集していないからです。ユーザーデータを持つサーバーも、広告パートナーも、データブローカーも、解析事業者もありません。売るものがなく、売る手段もありません。</p>"},{"t":"保存期間と削除","html":"<p>存在するデータは 3 種類だけで、すべてお使いの端末内にあります。</p><ul><li><strong>設定とサイト別ルール</strong> は、変更・初期化・削除するまでこのブラウザーの拡張機能ストレージに残ります。ポップアップの <em>設定をリセット</em> で消えます。</li><li><strong>整えた本文</strong> はセッションメモリーにあり、リーダータブが描画した時点で、またはブラウザー終了時に消えます。</li><li><strong>ライセンス</strong>（有効化した場合）はオフラインでも動くようこのブラウザーに保存されます。ポップアップで削除するとローカルの記録も消え、 activation の枠が空きます。</li></ul><p>整えたページの履歴はなく、ブラウザー外に出る利用回数もありません。拡張機能を削除すれば保存されたものはすべて消えます。</p>"},{"t":"子どものプライバシー","html":"<p>PrintClean はウェブページを印刷するための汎用ツールです。子ども向けではなく、アカウントもなく、年齢を問わず誰の情報も収集しません。</p>"},{"t":"ポリシーの変更","html":"<p>将来のバージョンで新しい権限や通信が必要になった場合は、その版の公開前にこのページを更新し、上部の日付も変更します。現在の設計目標は、このポリシーを短いままに保つことです。拡張機能はページを読み、端末内で組み、印刷します。</p>"},{"t":"連絡先","html":"<p>本ポリシーやページの扱いについてのご質問は <a href=\"mailto:support@annmax1983.com\">support@annmax1983.com</a> まで。不具合の報告や機能の要望も同じ宛先へどうぞ。</p>"}]},"de":{"summary":"PrintClean erhebt, speichert und überträgt weder die gelesenen Seiten noch den extrahierten Text oder personenbezogene Daten. Extraktion und Satz finden im Browser-Tab statt; der bereinigte Artikel wartet im Speicher der Erweiterung und wird gelöscht, sobald das Blatt ihn liest. Die einzige Netzwerkanfrage ist die optionale Pro-Lizenzprüfung aus Abschnitt 4.","sections":[{"t":"Datenerhebung","html":"<p>PrintClean erhebt nichts. Kein Konto, keine Analyse, keine Telemetrie, keine Absturzberichte, keine Werbe-ID, kein Zählpixel.</p><p>Konkret wird nichts von alldem irgendwohin gesendet:</p><ul><li>die Adresse einer bereinigten oder gedruckten Seite,</li><li>der extrahierte Text, Bilder oder Auszeichnung,</li><li>die eingegebenen Selektoren und Website-Regeln,</li><li>der Inhalt einer Stapelliste.</li></ul><p>Im Einzelseiten-Modus wird die Seite in dem Tab gelesen, in dem sie ohnehin liegt, aus der Kopie, die der Browser geladen hat. PrintClean ruft keine Seite für Sie ab.</p>"},{"t":"Wie PrintClean eine Seite liest","html":"<p>Mit <strong>Bereinigen und drucken</strong> führt PrintClean über die Skript-Schnittstelle des Browsers ein Skript im aktuellen Tab aus. Es bewertet die Blöcke der Seite, behält den Artikel und baut eine bereinigte Kopie: Navigation, Seitenleisten, Werbeflächen, Cookie-Banner, Teilen-Leisten, Kommentare, Newsletter-Kästen, Skripte und Inline-Event-Attribute fallen weg, Bildadressen werden absolut gemacht.</p><p>Die Kopie landet in <code>chrome.storage.session</code> — Speicher des Browsers, der beim Schließen geleert wird — und ein neuer Tab liest sie. Dieser Tab löscht die Kopie, sobald er sie dargestellt hat; ein zweiter Leser kommt nicht mehr daran.</p><p>Der Stapelmodus ist die einzige Funktion mit Netzwerkzugriff, und er arbeitet anders: Mit Ihrer Erlaubnis lädt er jede gelistete Adresse, extrahiert den Artikel im Lese-Tab und verwirft den Rest der Antwort. Diese Anfragen gehen direkt von Ihrem Browser an die genannte Website. Kein Zwischenserver, keine aufbewahrte Kopie.</p>"},{"t":"Erklärung der Berechtigungen","html":"<p>PrintClean fordert nur, was zum Arbeiten nötig ist, und erklärt jeden Punkt:</p><ul><li><strong>storage</strong> — merkt sich Schrifteinstellungen, Papier- und Randwahl sowie die pro Website gespeicherten Selektoren. Nur in diesem Browser.</li><li><strong>activeTab</strong> — gewährt für einen Klick auf die Symbolleiste Zugriff auf die Seite vor Ihnen. Keine dauerhafte Erlaubnis, jede Website zu lesen.</li><li><strong>scripting</strong> — führt das Extraktionsskript in diesem Tab aus.</li><li><strong>Host-Zugriff auf Anfrage</strong> — der Stapelmodus muss die eingefügten Adressen laden, deshalb fragt der Browser beim ersten Stapel, ob PrintClean auf Webseiten zugreifen darf. Vorher wird nichts gelesen, und die Erlaubnis lässt sich jederzeit in den Erweiterungseinstellungen entziehen.</li></ul><p>PrintClean hat kein dauerhaftes Content-Skript, keine Injektion im Hintergrund und keine <code>&lt;all_urls&gt;</code>-Berechtigung. Kein Zugriff auf Downloads, Debugger, Tab-Verlauf, Lesezeichen oder Zwischenablage.</p>"},{"t":"Dienste Dritter und Lizenzprüfung","html":"<p>PrintClean ist kostenlos. Eine optionale Pro-Lizenz schaltet größere Stapel und eigene Selektoren frei.</p><p>Nur wenn Sie eine Lizenz aktivieren, kontaktiert die Erweiterung <code>api.annmax1983.com</code>, um den Schlüssel zu prüfen. Diese Anfrage enthält den Lizenzschlüssel, eine in diesem Browser erzeugte zufällige Installationskennung und grundlegende Browserdaten. Sie geht beim Aktivieren und danach höchstens alle zwei Stunden beim Öffnen des Popups.</p><p>Die Prüfung ist bewusst nachsichtig: Ist der Server nicht erreichbar, arbeitet die gespeicherte Lizenz weiter, ein Netzwerkfehler sperrt also nie eine bezahlte Funktion. Diese Anfrage ist zugleich die einzige an einen unserer Server — keine Seitenadresse, kein Artikeltext, kein Selektor ist darin enthalten.</p><p>Die Zahlung selbst wickelt der Zahlungsdienstleister auf seiner Kassenseite ab; PrintClean sieht Ihre Kartendaten nie.</p>"},{"t":"Weitergabe von Daten","html":"<p>Es wird nichts weitergegeben, weil nichts erhoben wird. PrintClean hat keine Server mit Nutzerdaten, keine Werbepartner, keine Datenhändler und keinen Analyseanbieter. Es gibt nichts zu verkaufen und keinen Weg, es zu verkaufen.</p>"},{"t":"Aufbewahrung und Löschung","html":"<p>Es gibt drei Arten von Daten, alle auf Ihrem Gerät:</p><ul><li><strong>Einstellungen und Website-Regeln</strong> liegen im Erweiterungsspeicher dieses Browsers, bis Sie sie ändern, zurücksetzen oder die Erweiterung entfernen. <em>Einstellungen zurücksetzen</em> im Popup löscht sie.</li><li><strong>Der bereinigte Artikel</strong> liegt im Sitzungsspeicher und wird vom Lese-Tab gelöscht, sobald er ihn dargestellt hat, sonst beim Schließen des Browsers.</li><li><strong>Die Lizenz</strong> (falls aktiviert) wird in diesem Browser gespeichert, damit die Erweiterung offline arbeitet. Entfernen im Popup löscht sie lokal und gibt den Aktivierungsplatz frei.</li></ul><p>Es gibt keinen Verlauf der bereinigten Seiten und keinen Nutzungszähler, der den Browser verlässt. Das Entfernen der Erweiterung entfernt alles Gespeicherte.</p>"},{"t":"Datenschutz für Kinder","html":"<p>PrintClean ist ein allgemeines Werkzeug zum Drucken von Webseiten. Es richtet sich nicht an Kinder, hat keine Konten und erhebt von niemandem Informationen, unabhängig vom Alter.</p>"},{"t":"Änderungen dieser Erklärung","html":"<p>Braucht eine künftige Version eine neue Berechtigung oder eine neue Netzwerkanfrage, wird diese Seite vorher aktualisiert und das Datum oben angepasst. Das aktuelle Ziel ist, dass diese Erklärung kurz bleibt: Die Erweiterung liest eine Seite, setzt sie lokal und druckt sie.</p>"},{"t":"Kontakt","html":"<p>Fragen zu dieser Erklärung oder dazu, was die Erweiterung mit einer Seite macht, gehen an <a href=\"mailto:support@annmax1983.com\">support@annmax1983.com</a>. Fehlerberichte und Wünsche sind an derselben Adresse willkommen.</p>"}]},"es":{"summary":"PrintClean NO recoge, almacena ni transmite las páginas que lees, el texto que extrae ni ningún dato personal. La extracción y la maquetación ocurren dentro de la pestaña del navegador; el artículo limpio espera en la memoria de la extensión y se borra en cuanto la hoja lo lee. La única petición de red es la comprobación opcional de licencia Pro del apartado 4.","sections":[{"t":"Recogida de datos","html":"<p>PrintClean no recoge nada. Sin cuenta, sin analítica, sin telemetría, sin informes de fallos, sin identificadores publicitarios y sin píxeles de seguimiento.</p><p>En concreto, no se envía a ninguna parte:</p><ul><li>la dirección de la página que limpias o imprimes;</li><li>el texto, las imágenes o el marcado que extrae;</li><li>los selectores y reglas por sitio que escribes;</li><li>el contenido de una lista por lotes.</li></ul><p>En modo de una página, se lee en la pestaña donde ya está, de la copia que el navegador ha cargado. PrintClean nunca descarga una página por ti.</p>"},{"t":"Cómo lee PrintClean una página","html":"<p>Al pulsar <strong>Limpiar e imprimir</strong>, PrintClean ejecuta un script en la pestaña actual mediante la API de scripts del navegador. Ese script puntúa los bloques de la página, se queda con el artículo y construye una copia limpia: la navegación, las barras laterales, los huecos de publicidad, los avisos de cookies, las barras de compartir, los comentarios, las cajas de suscripción, los scripts y los manejadores en línea se descartan, y las direcciones de las imágenes se hacen absolutas.</p><p>La copia se guarda en <code>chrome.storage.session</code> —memoria del navegador, que se vacía al cerrarlo— y una pestaña nueva la lee. Esa pestaña borra la copia en cuanto la ha dibujado, así que un segundo lector no puede recogerla.</p><p>El modo por lotes es la única función que usa la red, y funciona distinto: con tu permiso carga cada dirección de la lista, extrae el artículo en la pestaña de lectura y descarta el resto de la respuesta. Esas peticiones van directamente de tu navegador al sitio que indicaste. Sin servidor intermedio y sin copia guardada.</p>"},{"t":"Permisos explicados","html":"<p>PrintClean pide lo mínimo con lo que puede trabajar y explica cada punto:</p><ul><li><strong>storage</strong> — recuerda tus ajustes de tipografía, el papel, el margen y los selectores guardados por sitio. Solo en este navegador.</li><li><strong>activeTab</strong> — da acceso a la página que tienes delante para una acción, al pulsar el botón de la barra. No es un permiso permanente para leer todos los sitios.</li><li><strong>scripting</strong> — ejecuta el script de extracción en esa pestaña.</li><li><strong>Acceso a sitios, a petición</strong> — el modo por lotes necesita cargar las direcciones que pegas, así que la primera vez el navegador pregunta si PrintClean puede acceder a páginas web. No se lee nada antes de aceptar, y el permiso se puede retirar cuando quieras en los ajustes de extensiones.</li></ul><p>PrintClean no incluye scripts de contenido, no inyecta en segundo plano y no pide <code>&lt;all_urls&gt;</code>. No tiene acceso a descargas, al depurador, al historial de pestañas, a los marcadores ni al portapapeles.</p>"},{"t":"Servicios de terceros y verificación de licencia","html":"<p>PrintClean es gratis. Una licencia Pro opcional desbloquea lotes mayores y selectores propios.</p><p>Solo si activas una licencia, la extensión contacta con <code>api.annmax1983.com</code> para comprobar la clave. Esa petición contiene la clave, un identificador de instalación aleatorio generado en este navegador y datos básicos del navegador. Se envía al activar y, después, como mucho cada dos horas al abrir el panel.</p><p>La comprobación es tolerante a propósito: si el servidor no responde, la licencia guardada sigue funcionando, así que un fallo de red nunca bloquea una función de pago. Además es la única petición que PrintClean hace a un servidor nuestro: no incluye direcciones de páginas, texto de artículos ni selectores.</p><p>El pago lo gestiona el proveedor en su propia página de cobro; PrintClean nunca ve los datos de tu tarjeta.</p>"},{"t":"Compartición de datos","html":"<p>No se comparte nada, porque no se recoge nada. PrintClean no tiene servidores con datos de usuarios, ni socios publicitarios, ni intermediarios de datos, ni proveedor de analítica. No hay nada que vender ni forma de venderlo.</p>"},{"t":"Conservación y borrado","html":"<p>Existen tres tipos de datos, todos en tu equipo:</p><ul><li><strong>Ajustes y reglas por sitio</strong> viven en el almacenamiento de la extensión hasta que los cambies, los restablezcas o quites la extensión. <em>Restablecer ajustes</em> en el panel los borra.</li><li><strong>El artículo limpio</strong> vive en la memoria de sesión y la pestaña de lectura lo borra en cuanto lo dibuja, o el navegador al cerrarse.</li><li><strong>La licencia</strong>, si activaste una, se guarda en este navegador para funcionar sin conexión. Quitarla en el panel la borra localmente y libera la activación.</li></ul><p>No hay historial de páginas limpiadas ni contador de uso que salga del navegador. Quitar la extensión elimina todo lo que guardó.</p>"},{"t":"Privacidad de menores","html":"<p>PrintClean es una herramienta general para imprimir páginas web. No está dirigida a menores, no tiene cuentas y no recoge información de nadie, sea cual sea su edad.</p>"},{"t":"Cambios en esta política","html":"<p>Si una versión futura necesita un permiso nuevo o una petición de red nueva, esta página se actualizará antes de publicarla y la fecha de arriba cambiará. El objetivo actual es que esta política siga siendo corta: la extensión lee una página, la maqueta en local y la imprime.</p>"},{"t":"Contacto","html":"<p>Las dudas sobre esta política o sobre qué hace la extensión con una página pueden ir a <a href=\"mailto:support@annmax1983.com\">support@annmax1983.com</a>. Los informes de fallos y las ideas también son bienvenidos en la misma dirección.</p>"}]},"fr":{"summary":"PrintClean ne collecte, ne stocke et ne transmet ni les pages que vous lisez, ni le texte extrait, ni aucune donnée personnelle. L’extraction et la composition se font dans l’onglet du navigateur ; l’article propre attend dans la mémoire de l’extension et disparaît dès que la feuille le lit. La seule requête réseau est la vérification facultative de licence Pro décrite à la section 4.","sections":[{"t":"Collecte des données","html":"<p>PrintClean ne collecte rien. Pas de compte, pas de mesure d’audience, pas de télémétrie, pas de rapport de plantage, pas d’identifiant publicitaire, pas de pixel de suivi.</p><p>Concrètement, rien de tout cela n’est envoyé nulle part :</p><ul><li>l’adresse d’une page nettoyée ou imprimée ;</li><li>le texte, les images ou le balisage extraits ;</li><li>les sélecteurs et règles par site que vous saisissez ;</li><li>le contenu d’une liste par lot.</li></ul><p>En mode page unique, la lecture se fait dans l’onglet où la page se trouve déjà, à partir de la copie chargée par le navigateur. PrintClean ne va jamais chercher une page à votre place.</p>"},{"t":"Comment PrintClean lit une page","html":"<p>Quand vous cliquez sur <strong>Nettoyer et imprimer</strong>, PrintClean exécute un script dans l’onglet courant via l’API de scripts du navigateur. Ce script note les blocs de la page, garde l’article et construit une copie propre : navigation, colonnes, blocs publicitaires, bandeaux de cookies, barres de partage, commentaires, encarts d’abonnement, scripts et attributs d’événement en ligne sont écartés, et les adresses d’images rendues absolues.</p><p>La copie est déposée dans <code>chrome.storage.session</code> — de la mémoire gérée par le navigateur, vidée à sa fermeture — et un nouvel onglet la lit. Cet onglet supprime la copie dès qu’il l’a affichée : un second lecteur ne peut pas la récupérer.</p><p>Le mode par lot est la seule fonction qui utilise le réseau, et il procède autrement : avec votre accord, il charge chaque adresse listée, extrait l’article dans l’onglet de lecture et jette le reste de la réponse. Ces requêtes partent directement de votre navigateur vers le site indiqué. Aucun serveur intermédiaire, aucune copie conservée.</p>"},{"t":"Explication des autorisations","html":"<p>PrintClean ne demande que le minimum nécessaire et explique chaque point :</p><ul><li><strong>storage</strong> — retient vos réglages de typographie, le papier, la marge et les sélecteurs enregistrés par site. Uniquement dans ce navigateur.</li><li><strong>activeTab</strong> — accorde l’accès à la page affichée pour une action, au clic sur le bouton de la barre. Ce n’est pas une autorisation permanente de lire tous les sites.</li><li><strong>scripting</strong> — exécute le script d’extraction dans cet onglet.</li><li><strong>Accès aux sites, à la demande</strong> — le mode par lot doit charger les adresses collées, donc le navigateur demande au premier lot si PrintClean peut accéder aux pages web. Rien n’est lu avant votre accord, et il peut être retiré à tout moment dans les réglages des extensions.</li></ul><p>PrintClean n’embarque aucun script de contenu, n’injecte rien en arrière-plan et ne demande pas <code>&lt;all_urls&gt;</code>. Il n’a accès ni aux téléchargements, ni au débogueur, ni à l’historique des onglets, ni aux favoris, ni au presse-papiers.</p>"},{"t":"Services tiers et vérification de licence","html":"<p>PrintClean est gratuit. Une licence Pro facultative débloque des lots plus grands et des sélecteurs personnalisés.</p><p>Uniquement si vous activez une licence, l’extension contacte <code>api.annmax1983.com</code> pour vérifier la clé. Cette requête contient la clé, un identifiant d’installation aléatoire créé dans ce navigateur et des informations de base sur le navigateur. Elle part à l’activation, puis au plus une fois toutes les deux heures à l’ouverture du panneau.</p><p>La vérification est volontairement tolérante : si le serveur est injoignable, la licence en cache continue de fonctionner, un échec réseau ne bloque donc jamais une fonction payante. C’est aussi la seule requête vers un de nos serveurs : aucune adresse de page, aucun texte d’article et aucun sélecteur n’y figure.</p><p>Le paiement est traité par le prestataire sur sa propre page ; PrintClean ne voit jamais vos données bancaires.</p>"},{"t":"Partage des données","html":"<p>Rien n’est partagé, puisque rien n’est collecté. PrintClean n’a aucun serveur contenant des données d’utilisateurs, aucun partenaire publicitaire, aucun revendeur de données et aucun prestataire de mesure. Il n’y a rien à vendre, ni moyen de le vendre.</p>"},{"t":"Conservation et suppression","html":"<p>Trois types de données existent, tous sur votre machine :</p><ul><li><strong>Les réglages et les règles par site</strong> restent dans le stockage de l’extension jusqu’à ce que vous les modifiiez, les réinitialisiez ou supprimiez l’extension. <em>Réinitialiser</em> dans le panneau les efface.</li><li><strong>L’article propre</strong> vit dans la mémoire de session et l’onglet de lecture le supprime dès qu’il l’a affiché, sinon le navigateur à sa fermeture.</li><li><strong>La licence</strong>, si vous en avez activé une, est mise en cache dans ce navigateur pour fonctionner hors ligne. La retirer dans le panneau l’efface localement et libère l’activation.</li></ul><p>Aucun historique des pages nettoyées, aucun compteur d’usage ne sort du navigateur. Supprimer l’extension supprime tout ce qu’elle a stocké.</p>"},{"t":"Confidentialité des enfants","html":"<p>PrintClean est un outil général pour imprimer des pages web. Il ne s’adresse pas aux enfants, n’a pas de comptes et ne collecte d’informations sur personne, quel que soit l’âge.</p>"},{"t":"Modifications de cette politique","html":"<p>Si une version future a besoin d’une nouvelle autorisation ou d’une nouvelle requête réseau, cette page sera mise à jour avant sa publication et la date en haut changera. L’objectif actuel est que cette politique reste courte : l’extension lit une page, la compose localement et l’imprime.</p>"},{"t":"Contact","html":"<p>Les questions sur cette politique, ou sur ce que l’extension fait d’une page, peuvent être envoyées à <a href=\"mailto:support@annmax1983.com\">support@annmax1983.com</a>. Les rapports de bugs et les suggestions sont bienvenus à la même adresse.</p>"}]}}};
+const UI_ALL = {"en":{"privacyTitle":"Privacy Policy","home":"Home","onThisPage":"On this page","lastUpdated":"Last updated: November 2026","chips":["Pages stay in the tab","No upload","No account","Licence optional"],"footerHome":"Home","footerSite":"Website","footerEmail":"Email"},"zh":{"privacyTitle":"隐私政策","home":"首页","onThisPage":"本页目录","lastUpdated":"最后更新：2026 年 11 月","chips":["页面留在标签页里","不上传","无需账号","授权可选"],"footerHome":"首页","footerSite":"官网","footerEmail":"邮件"},"ja":{"privacyTitle":"プライバシーポリシー","home":"ホーム","onThisPage":"目次","lastUpdated":"最終更新：2026年11月","chips":["ページはタブ内だけ","送信なし","アカウント不要","ライセンスは任意"],"footerHome":"ホーム","footerSite":"公式サイト","footerEmail":"メール"},"de":{"privacyTitle":"Datenschutzerklärung","home":"Startseite","onThisPage":"Auf dieser Seite","lastUpdated":"Zuletzt aktualisiert: November 2026","chips":["Seiten bleiben im Tab","Kein Upload","Kein Konto","Lizenz optional"],"footerHome":"Startseite","footerSite":"Website","footerEmail":"E-Mail"},"es":{"privacyTitle":"Política de privacidad","home":"Inicio","onThisPage":"En esta página","lastUpdated":"Última actualización: noviembre de 2026","chips":["Páginas en la pestaña","Sin subidas","Sin cuenta","Licencia opcional"],"footerHome":"Inicio","footerSite":"Sitio web","footerEmail":"Correo"},"fr":{"privacyTitle":"Politique de confidentialité","home":"Accueil","onThisPage":"Sur cette page","lastUpdated":"Dernière mise à jour : novembre 2026","chips":["Pages dans l’onglet","Aucun envoi","Sans compte","Licence facultative"],"footerHome":"Accueil","footerSite":"Site web","footerEmail":"E-mail"}};
+const CONFIG = {"name":"PrintClean","icon":"icons/icon128.png","site":"https://annmax1983.com/extensions/printclean"};
+const LANG_KEY = "vkt-printclean-lang";
+(function () {
+  "use strict";
+
+  var select = document.getElementById("p-lang");
+  var observer = null;
+  var ui = function (lang) { return UI_ALL[lang] || UI_ALL.en; };
+
+  function esc(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function setText(id, value) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = value == null ? "" : value;
+  }
+
+  function detect() {
+    var codes = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < codes.length; i++) {
+      var code = String(codes[i] || "").toLowerCase();
+      if (code.indexOf("zh") === 0) return "zh";
+      if (code.indexOf("ja") === 0) return "ja";
+      if (code.indexOf("de") === 0) return "de";
+      if (code.indexOf("es") === 0) return "es";
+      if (code.indexOf("fr") === 0) return "fr";
+      if (code.indexOf("en") === 0) return "en";
+    }
+    return "en";
+  }
+
+  function initToc() {
+    if (observer) observer.disconnect();
+    var links = Array.prototype.slice.call(document.querySelectorAll("#p-toc a"));
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".policy-card"));
+    if (!links.length || !cards.length || typeof IntersectionObserver === "undefined") return;
+
+    function activate(id) {
+      links.forEach(function (link) {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+      });
+    }
+
+    observer = new IntersectionObserver(function (entries) {
+      var visible = entries.filter(function (entry) { return entry.isIntersecting; });
+      if (visible.length) activate(visible[0].target.id);
+    }, { rootMargin: "-18% 0px -68% 0px", threshold: [0, 1] });
+
+    cards.forEach(function (card) { observer.observe(card); });
+    if (links[0]) links[0].classList.add("active");
+  }
+
+  function render(lang) {
+    var data = MODEL.langs[lang];
+    if (!data) return;
+    var u = ui(lang);
+
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+    document.title = CONFIG.name + " — " + u.privacyTitle;
+
+    setText("p-eyebrow", u.privacyTitle);
+    setText("p-h1", CONFIG.name);
+    setText("p-h1-sub", u.privacyTitle);
+    setText("p-updated", u.lastUpdated);
+    setText("p-toc-title", u.onThisPage);
+
+    var summary = document.getElementById("p-summary");
+    if (summary) summary.innerHTML = data.summary || "";
+
+    var chips = document.getElementById("p-chips");
+    if (chips) {
+      chips.innerHTML = u.chips.map(function (chip) {
+        return '<span class="chip">' + esc(chip) + "</span>";
+      }).join("");
+    }
+
+    setText("p-footer-home", u.footerHome);
+    setText("p-footer-privacy", u.privacyTitle);
+    setText("p-footer-site", u.footerSite);
+    setText("p-footer-email", u.footerEmail || "Email");
+
+    var toc = document.getElementById("p-toc");
+    var sections = document.getElementById("p-sections");
+    if (!toc || !sections) return;
+    toc.innerHTML = "";
+    sections.innerHTML = "";
+
+    data.sections.forEach(function (section, index) {
+      var number = String(index + 1).padStart(2, "0");
+      var id = "section-" + (index + 1);
+
+      var link = document.createElement("a");
+      link.href = "#" + id;
+      link.innerHTML = "<span>" + number + "</span>" + esc(section.t);
+      toc.appendChild(link);
+
+      var card = document.createElement("article");
+      card.className = "policy-card";
+      card.id = id;
+      card.innerHTML = '<h2><span class="policy-num">' + number + "</span>" + esc(section.t) + '</h2><div class="policy-body">' + section.html + "</div>";
+      sections.appendChild(card);
+    });
+
+    initToc();
+  }
+
+  function storedLang() {
+    try { return localStorage.getItem(LANG_KEY); } catch (error) { return null; }
+  }
+
+  function remember(lang) {
+    try { localStorage.setItem(LANG_KEY, lang); } catch (error) { /* storage can be blocked */ }
+  }
+
+  initToc();
+
+  if (select) {
+    var saved = storedLang();
+    var initial = saved && MODEL.langs[saved] ? saved : detect();
+    if (!MODEL.langs[initial]) initial = "en";
+    select.value = initial;
+    if (initial !== "en") render(initial);
+    select.addEventListener("change", function () {
+      remember(select.value);
+      render(select.value);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
