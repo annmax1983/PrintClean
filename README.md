@@ -45,7 +45,7 @@ node tools/shoot.js  # five 1280×800 store shots + promo.png, from the real pop
 
 `npm run icons:preview` writes `assets/icon-preview.png` (three glyph candidates at 220/64/48/32/16) without touching `icons/`.
 
-Load the repository root in `chrome://extensions` with developer mode on to try it.
+> This repository is for project presentation; the complete source is not published. Install PrintClean from the official browser stores.
 
 ## Store screenshots
 
