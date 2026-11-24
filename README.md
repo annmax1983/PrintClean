@@ -5,7 +5,7 @@ Turn the page you are on into a clean printable sheet: the article stays, the na
 ## What it does
 
 - Extracts the article from the page in front of you and opens it in its own tab, typeset on a paper-like sheet. The original page is never modified.
-- Adjustable font size, line height and measure; A4 or Letter; three margin presets; header and footer on or off; black-and-white and images-off switches.
+- Adjustable font size, line height and measure; A4 or Letter; three margin presets; the article header on or off; black-and-white and images-off switches.
 - Print, or use the browser's Save as PDF. Tables, code blocks, quotes and figures are kept off page breaks.
 - Batch mode takes a list of addresses and gives each one its own sheet — one article per page, never interleaved.
 - Shadow DOM is followed, `<picture>`/`srcset` resolved, lazy images found, 1×1 tracking pixels dropped, every URL made absolute.
@@ -21,7 +21,7 @@ Turn the page you are on into a clean printable sheet: the article stays, the na
 | | Free | Pro |
 |---|---|---|
 | Clean and print the current page | ✅ | ✅ |
-| Type, paper, margins, header/footer, mono, images | ✅ | ✅ |
+| Type, paper, margins, article header, mono, images | ✅ | ✅ |
 | Batch pages per run | 3 | 50 |
 | Custom selectors per site | — | ✅ |
 | Global selector list | — | ✅ (24 per list, 60 sites) |
@@ -37,7 +37,7 @@ npm install        # only devDependency: terser
 npm run locales    # regenerate the six _locales files from tools/make-locales.js
 npm run icons      # bake icons/ + assets/icon-master.png
 npm test           # node --test: common logic, extraction, rules bundle, i18n, wiring, manifest
-npm run e2e        # real Chrome + fixtures: 49 assertions on extraction and the reader
+npm run e2e        # real Chrome + fixtures: 57 assertions on extraction and the reader
 npm run build      # minify and write publish/printclean-v<version>.zip
 npm run verify     # unpack the zip and load the packed popup and reader
 node tools/shoot.js  # five 1280×800 store shots + promo.png, from the real popup
@@ -57,7 +57,7 @@ node tools/shoot.js  # five 1280×800 store shots + promo.png, from the real pop
 
 ## Design notes
 
-- **No `<all_urls>`, ever.** Single-page printing uses `activeTab` only. Batch mode asks for host access with `chrome.permissions.request` inside the click handler, so the prompt is tied to a user gesture; the grant lives in `optional_host_permissions`.
+- **No mandatory `<all_urls>`.** Single-page printing uses `activeTab` only. Batch mode asks for host access with `chrome.permissions.request` inside the click handler, so the prompt is tied to a user gesture; the grant lives in `optional_host_permissions`.
 - **No CDP, no offscreen document, no `downloads`.** The batch runs in the reader tab: `fetch` the listed pages, `DOMParser`, extract, one sheet per article, then the browser's own print dialog. This keeps the build MV3-safe and makes a Firefox twin possible.
 - **The article never touches disk.** It is written to `chrome.storage.session` (memory, cleared when the browser closes) and the reader deletes it as soon as it renders.
 - **Keep beats hide.** A `keep` selector protects the whole subtree from the junk classifier and both cleanup passes, so a rule written by hand cannot be undone by a heuristic.
@@ -90,4 +90,4 @@ This repository builds the Chrome/Edge package (`background.service_worker`). A 
 
 v1.0.0 is feature-complete and packaged (`publish/printclean-v1.0.0.zip`), but it has not been submitted to any store yet — the three "Coming Soon" spots on the product page are literal.
 
-Pricing is **$9.99 one-time, two activations**. The amount is never written into this repo: the single source of truth is `annmax-site/js/plans.js` plus the product in the Creem dashboard, and `creems/src/db/migrations/0012_plans_printclean.sql` mirrors it on the checkout side (`creem_plan_id` stays NULL until the product exists). The product page, the extensions index card, the homepage grid and the plan row are all in place.
+Pricing (one-time, two activations) lives outside this repo: the single source of truth is `annmax-site/js/plans.js` plus the product in the Creem dashboard, and `creems/src/db/migrations/0012_plans_printclean.sql` mirrors it on the checkout side (`creem_plan_id` stays NULL until the product exists). The product page, the extensions index card, the homepage grid and the plan row are all in place.
