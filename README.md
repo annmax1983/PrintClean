@@ -88,6 +88,6 @@ This repository builds the Chrome/Edge package (`background.service_worker`). A 
 
 ## Status
 
-v1.0.0 is feature-complete and packaged (`publish/printclean-v1.0.0.zip`), but it has not been submitted to any store yet — the three "Coming Soon" spots on the product page are literal.
+v1.0.0 is feature-complete and packaged (`publish/printclean-v1.0.0.zip`), and it is live on Microsoft Edge Add-ons ([Install for Edge](https://microsoftedge.microsoft.com/addons/detail/ldohlkpniclllenepagjbdkdeikdgced)) — the Chrome Web Store and Firefox Add-ons spots on the product page are still literal "Coming Soon".
 
 Pricing (one-time, two activations) lives outside this repo: the single source of truth is `annmax-site/js/plans.js` plus the product in the Creem dashboard, and `creems/src/db/migrations/0012_plans_printclean.sql` mirrors it on the checkout side (`creem_plan_id` stays NULL until the product exists). The product page, the extensions index card, the homepage grid and the plan row are all in place.
